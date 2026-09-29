@@ -12,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.myproject.ui.theme.MyProjectTheme
+import com.example.uikit.ASmallButton
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -41,7 +42,5 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
-    MyProjectTheme {
-        Greeting("Android")
-    }
+    ASmallButton(text = "Privet", action = {print("")}, modifier = Modifier)
 }

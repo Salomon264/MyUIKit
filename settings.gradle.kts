@@ -16,6 +16,14 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven {
+            name = "GitHubPackages"
+            url = uri("https://maven.pkg.github.com/Salomon264/MyUIKit")
+            credentials {
+                username = providers.gradleProperty("gpr.user").getOrElse("")
+                password = providers.gradleProperty("gpr.key").getOrElse("")
+            }
+        }
     }
 }
 
