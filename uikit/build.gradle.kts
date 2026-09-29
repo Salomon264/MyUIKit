@@ -60,7 +60,7 @@ afterEvaluate {
             create<MavenPublication>("release") {
                 groupId = "io.github.salomon264"
                 artifactId = "uikit"
-                version = "1.0.0"
+                version = "1.0.2"
                 from(components["release"])
             }
         }
